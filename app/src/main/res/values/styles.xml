@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="my_Style">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textColor">#F80000</item>
+    </style>
+</resources>
