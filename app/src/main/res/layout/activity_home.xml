@@ -109,6 +109,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
     <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none"
@@ -119,9 +120,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="135dp"
+            android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:orientation="vertical">
+            android:paddingRight="20dp">
 
             <ImageView
                 android:id="@+id/salad"
@@ -149,10 +150,10 @@
             <ImageView
                 android:id="@+id/mainDish"
                 style="@style/my_Style"
-                android:background="@drawable/category_card_bc"
-                app:srcCompat="@drawable/drinks"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@id/salad"/>
+                android:layout_toEndOf="@id/salad"
+                android:background="@drawable/category_card_bc"
+                app:srcCompat="@drawable/drinks" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -173,10 +174,10 @@
             <ImageView
                 android:id="@+id/Drinks"
                 style="@style/my_Style"
-                android:background="@drawable/category_card_bc"
-                app:srcCompat="@drawable/catergory_drinks"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@id/mainDish"/>
+                android:layout_toEndOf="@id/mainDish"
+                android:background="@drawable/category_card_bc"
+                app:srcCompat="@drawable/catergory_drinks" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -197,10 +198,10 @@
             <ImageView
                 android:id="@+id/Desserts"
                 style="@style/my_Style"
-                android:background="@drawable/category_card_bc"
-                app:srcCompat="@drawable/category_dessert"
                 android:layout_marginStart="17dp"
-                android:layout_toEndOf="@id/Drinks"/>
+                android:layout_toEndOf="@id/Drinks"
+                android:background="@drawable/category_card_bc"
+                app:srcCompat="@drawable/category_dessert" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -221,6 +222,29 @@
 
         </RelativeLayout>
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Popular recipe"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_popular"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:listitem="@layout/popular_rv_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
