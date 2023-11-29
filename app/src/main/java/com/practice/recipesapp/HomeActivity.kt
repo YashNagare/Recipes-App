@@ -22,6 +22,10 @@ class HomeActivity : AppCompatActivity() {
 
         setupRecyclerView()
 
+        binding.search.setOnClickListener {
+            startActivity(Intent(this, SearchActivity::class.java))
+        }
+
     }
 
     private fun setupRecyclerView() {
