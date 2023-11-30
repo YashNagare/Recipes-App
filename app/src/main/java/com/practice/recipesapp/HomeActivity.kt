@@ -26,6 +26,31 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, SearchActivity::class.java))
         }
 
+        binding.salad.setOnClickListener {
+            var intent = Intent(this@HomeActivity, CategoryActivity::class.java)
+            intent.putExtra("TITTLE", "Salad")
+            intent.putExtra("CATEGORY", "Salad")
+            startActivity(intent)
+        }
+        binding.mainDish.setOnClickListener {
+            var intent = Intent(this@HomeActivity, CategoryActivity::class.java)
+            intent.putExtra("TITTLE", "Main Dish")
+            intent.putExtra("CATEGORY", "Dish")
+            startActivity(intent)
+        }
+        binding.drinks.setOnClickListener {
+            var intent = Intent(this@HomeActivity, CategoryActivity::class.java)
+            intent.putExtra("TITTLE", "Drinks")
+            intent.putExtra("CATEGORY", "Drinks")
+            startActivity(intent)
+        }
+        binding.desserts.setOnClickListener {
+            var intent = Intent(this@HomeActivity, CategoryActivity::class.java)
+            intent.putExtra("TITTLE", "Desserts")
+            intent.putExtra("CATEGORY", "Desserts")
+            startActivity(intent)
+        }
+
     }
 
     private fun setupRecyclerView() {
