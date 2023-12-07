@@ -173,14 +173,4 @@
 
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/go_up"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/scroll_up"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

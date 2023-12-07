@@ -3,8 +3,6 @@ package com.practice.recipesapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.practice.recipesapp.databinding.ActivityHomeBinding
